@@ -1,0 +1,13 @@
+.metadataBox{
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+    min-height: 500px;
+    transition: all linear 0.3s;
+    right: 10px;
+    top:0;
+    &.active{
+        width: 300;
+        right: -100%;
+    }
+}

@@ -1,0 +1,32 @@
+.nodeBox {
+  min-width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  .titleBox {
+    text-align: center;
+    background-color: #ccc;
+  }
+  .portsList {
+    min-height: 50px;
+    margin: 0;
+    padding: 0;
+    > li {
+      list-style: none;
+      padding: 0 4px;
+      margin: 0;
+      height: 24px;
+      &.propertyLi {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 24px;
+        .name {
+            max-width: 240px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+}
